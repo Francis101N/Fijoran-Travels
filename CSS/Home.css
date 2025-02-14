@@ -3,7 +3,6 @@
 }
 body{
     margin: 0%;
-    background-color: #faffeb;
     overflow-x: hidden;
 }
 .navbar-brand img{
@@ -28,7 +27,7 @@ body{
     border-radius: 10px;
 }
 main{
-    padding: 2% 5% 5% 10%;
+    padding: 2% 0% 5% 5%;
 }
 .info{
     display: flex;
@@ -44,10 +43,9 @@ main{
 }
 .info div{
     display: flex;
-
 }
 .icon{
-    padding: 4px 5px 0px 0px
+    padding: 4px 8px 0px 0px
 }
 .icon i{
     background-color: #c1dfea;
@@ -65,16 +63,12 @@ main{
     position: relative;
 }
 .right img{
-    width: 80%;
-}
-.right img:hover{
-    width: 90%;
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
 }
 .section-one{
     padding: 0% 5% 5% 5%;
-}
-.sec-cont-one img:hover{
-    width: 90%;
 }
 .sec-cont-two{
     padding: 150px 30px 0px 50px;
@@ -98,7 +92,8 @@ article{
     padding-right: 40px;
 }
 .art-one{
-    display: flex;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
 }
 .art-one div{
     background-color: white;
@@ -111,10 +106,10 @@ article{
     padding: 5px 15px 0px 15px;
 }
 .article-two{
-    background-color: #b3e4f5;
+    background-color: #e6f6fc;
     border-radius: 40px;
     margin: 2% 10% 0px 10%;
-    padding: 20px 0px 60px 0px;
+    padding: 20px 0px 100px 0px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 .art-info{
@@ -128,7 +123,7 @@ article{
     padding: 10px 0px 0px 15px;
     margin: 0px 15% 0px 15%;
     position: relative;
-    bottom: 20px;
+    bottom: 30px;
 }
 .art-info div{
     display: flex;
@@ -138,7 +133,7 @@ article{
 /* section two */
 
 .section-two{
-   margin: 5%;
+   margin: 1% 5% 5% 5%;
 }
 .sec-two-parent{
     display: grid;
@@ -148,6 +143,9 @@ article{
     border: 1px solid gray;
     border-radius: 20px;
     margin: 20px;
+}
+.sec-cont-two{
+    padding-left: 100px;
 }
  .img{
      width: 100%;
@@ -190,6 +188,9 @@ article{
     background-color:#e6f6fc;
     border-radius: 15px;
 }
+.profile-name{
+    padding-top: 30px;
+}
 .art-three-right-img{
     transform: translateX(100%);
     opacity: 0;
@@ -206,23 +207,24 @@ article{
     margin-top: 50px;
 }
 .s-t-l{
-    align-items: center;
-    padding: 200px 0px 0px 5%;
+    padding: 300px 0px 0px 5%;
 }
 form{
     padding: 40px 0% 20px 5%;
 }
 input{
     width: 70%;
-    height: 35px;
+    height: 40px;
     border-radius: 5px;
-    border: none;
+    border: 1px solid black;
+    background-color:#ccedf8;
 }
 #additional-info{
     width: 70%;
-    height: 120px;
+    height: 160px;
     border-radius: 5px;
-    border: none;
+    border: 1px solid black;
+    background-color: #ccedf8;
 }
 input[type="submit"]{
     width: 70%;
@@ -231,7 +233,7 @@ input[type="submit"]{
     border-radius: 10px;
 }
 footer{
-    background-color: #03141e;
+    background-color: #1b1e20;
 }
 .footer-nav span{
     padding-right: 30px;
@@ -243,19 +245,34 @@ footer{
 footer hr{
     color: white;
 }
+@media screen and (max-width:1400px){
+    .sec-one-art div{
+        font-size: 10px;
+        padding: 5px 50px 5px 50px;
+    }
+    article{
+        padding: 0% 2% 0% 3%;
+    }
+    .art-one{
+        grid-template-columns: 50% 50%;
+    }
+}
 
 @media screen and (max-width:992px){
     main{
-        padding: 2% 5% 5% 5%;
+        padding: 2% 0% 5% 5%;
     }
     .right img{
-        width: 90%;
+        width: 100%;
     }
     .section-one{
        padding-top: 10%;
     }
+    .sec-one-art div{
+        font-size: 13px;
+    }
     .art-one{
-        flex-direction: column;
+        grid-template-columns: 50% 50%;
     }
     .art-info{
         grid-template-columns: 50% 50%;
@@ -264,9 +281,6 @@ footer hr{
     .art-info div{
         padding-bottom: 20px;
     }
-    /* .section-two{
-        margin: 2%;
-     } */
     .sec-two-parent{
         grid-template-columns:50% 50%;
     }
@@ -286,7 +300,13 @@ footer hr{
         width: 90%;
      }
      .sec-cont-two{
-        padding: 50px 2% 0px 2%;
+        padding: 50px 2% 0px 3%;
+    }
+    .profile-img{
+        width: 60px;
+    }
+    .profile-name{
+        padding-top: 10px;
     }
 }
 
@@ -318,20 +338,24 @@ footer hr{
         padding-left: 30px;
     }
     .info{
-        width: 400px;
+        width: 450px;
         font-size: 10px;
     }
-    .icon i{
-        padding: 10px;
+    .icon{
+        padding: 0px 8px 0px 10px
     }
     .link{
         padding-top: 4px;
     }
+    .i{
+        padding-top: 5px;
+    }
     .right{
         padding: 100px 0px 0px 2%;
+        margin-top: 15px;
     }
     .right img{
-        width: 100%;
+        width: 95%;
     }
     .sec-cont-two{
         padding: 50px 0px 0px 0px;
@@ -340,7 +364,7 @@ footer hr{
         grid-template-columns:100%;
     }
     .art-one{
-       flex-direction: column;
+        grid-template-columns: 100%;
     }
     .art-info{
         grid-template-columns: 50% 50%;
@@ -349,10 +373,16 @@ footer hr{
     .art-info div{
        padding-bottom: 20px;
     }
+    .art-left{
+        padding-left: 15px;
+    }
     input{
         width: 95%;
      }
      #additional-info{
         width: 95%;
      }
+     input[type="submit"]{
+        width: 95%;
+    }
 }

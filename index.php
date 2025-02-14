@@ -9,58 +9,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark">
-        <div class="container-fluid">
-          <!-- Logo -->
-          <a class="navbar-brand" href="#">
-            <img src="IMAGES/logo-removebg-preview.png" alt="Logo">
-          </a>
-      
-          <!-- Navbar Toggler for Mobile Devices -->
-          <button class="navbar-toggler text-light border border-success border-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"><i class="fa-solid fa-bars text-white fs-1"></i></span>
-          </button>
-      
-           <!-- Navbar Links and Sign Up/Contact -->
-           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0"> 
-              <li class="nav-item">
-                <a class="nav-link active navlink ps-4 fw-bold" aria-current="page" href="C:\Users\user\Desktop\FIJORAN TRAVELS\Home.html">HOME</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link navlink ps-4 fw-bold" href="C:\Users\user\Desktop\FIJORAN TRAVELS\about-us.html">ABOUT</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link navlink ps-4 fw-bold" href="C:\Users\user\Desktop\FIJORAN TRAVELS\services.html">SERVICES</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link navlink ps-4 fw-bold" href="C:\Users\user\Desktop\FIJORAN TRAVELS\services.html">BLOG</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link navlink ps-4 fw-bold" href="C:\Users\user\Desktop\FIJORAN TRAVELS\contact.html">CONTACT</a>
-              </li>
-            </ul>
-      
-            <!-- Sign Up and Contact Links -->
-            <div class="d-flex align-items-center pt-4 pe-5 informationcont">
-              <p class="pe-3 pb-4 mb-0 ms-4">
-                <a href="C:\Users\user\Desktop\FIJORAN TRAVELS\book-a-trip.html" class="btn btn-primary signup">BOOK A TRIP</a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </nav>
+  
+     <?php include('header.php')?>
 
       <main class="d-flex flex-wrap">
         <div class="left col-12 col-lg-5 col-md-6">
-          <img src="IMAGES/Vector (4).png" alt="Vector (4)"> <span style="color: #01a6dd;">Explore The World</span>
+          <img src="IMAGES/Vector (4).png" alt="Vector (4)"> <span style="color: #01a6dd;">Explore The World</span><br>
           <h1>Discover The Best Destinations In The World.</h1>
           <p>Lorem ipsum dolor sit amet consectetur. Non iaculis sodales habitasse dignissim. Urna commodo a massa aliquam. </p>
+          <br>
 
            <div class="info">
             <div>
-              <p class="icon"><i class="fa-solid fa-location-pin"></i></p>
-              <p>
+              <p class="icon"><img src="IMAGES/Group 8 (3).png" alt="location-logo"></p>
+              <p class="i">
               <span><b>Location</b></span><br>
               <span>Where Are You Going?</span>
               </p>
@@ -68,8 +30,8 @@
       
             <div>
              <div>
-              <p class="icon"><i class="fa-solid fa-calendar-days"></i></p>
-              <p>
+              <p class="icon"><img src="IMAGES/Group 9 (1).png" alt="calender-logo"></p>
+              <p class="i">
               <span><b>Select Date</b></span><br>
               <span>25th Febuary</span>
               </p>
@@ -120,17 +82,17 @@
 
         <div class="art-right col-12 col-lg-6 col-md-6 ">
           <div class="art-one ">
-             <div>
+             <div class="art-one-one">
                 <img src="IMAGES/Group 8.png" alt=""><br><br>
                 <p><b>Lots Of Choices</b></p>
                 <p>Lorem ipsum dolor sit amet consectetur. Non iaculis sodales habitasse dignissim. Urna commodo a massa aliquam. </p>
              </div>
-             <div style="background-color: #e6f6fc;">
+             <div style="background-color: #e6f6fc;" class="art-one-two">
                 <img src="IMAGES/Group 8 (1).png" alt=""><br><br>
                 <p><b>Best Tour Guide</b></p>
                 <p>Lorem ipsum dolor sit amet consectetur. Non iaculis sodales habitasse dignissim. Urna commodo a massa aliquam. </p>
              </div>
-             <div>
+             <div class="art-one-three"> 
                 <img src="IMAGES/Group 8 (2).png" alt=""><br><br>
                 <p><b>Easy Booking</b></p>
                 <p>Lorem ipsum dolor sit amet consectetur. Non iaculis sodales habitasse dignissim. Urna commodo a massa aliquam. </p>
@@ -138,6 +100,7 @@
           </div>
 
         </div>
+
       </article>
 
       <article class="article-two">
@@ -271,8 +234,8 @@
         <h1>What Our Customer Say About Us</h1>
             <div class="profile">
                <div class="pro-flex d-flex flex-wrap">
-                <p class="pe-3"><img src="IMAGES/Mask group (6).png" alt="" width="100%"></p>
-                <div class="pt-3">
+                <p class="pe-3"><img src="IMAGES/Mask group (6).png" alt="" width="100%" class="profile-img"></p>
+                <div class="profile-name">
                    <span><b>Park Micheal</b></span><br>
                     <span>Travel Enthusiast</span>
                 </div>
@@ -309,25 +272,7 @@
       </form>
      </section>
 
-
-     <footer class="text-center">
-      <img src="IMAGES/logo-removebg-preview.png" alt="logo" style="height: 50px;" class="mt-3">
-      <nav class="footer-nav mt-3">
-        <span><a href="C:\Users\user\Desktop\FIJORAN TRAVELS\Home.html">HOME</a></span>
-        <span><a href="C:\Users\user\Desktop\FIJORAN TRAVELS\about-us.html">ABOUT</a></span>
-        <span><a href="C:\Users\user\Desktop\FIJORAN TRAVELS\services.html">SERVICES</a></span>
-        <span><a href="C:\Users\user\Desktop\FIJORAN TRAVELS\blog.html">BLOG</a></span>
-        <span><a href="C:\Users\user\Desktop\FIJORAN TRAVELS\contact.html">CONTACT</a></span>
-     </nav>
-       <hr>
-       <span class="text-light">@ Fijoran Travel Nig Ltd 2025. All Right Reserved.</span>
-    </footer>
-
-
-
-
-
-
+     <?php include('footer.php')?>
 
     <script src="JAVASCRIPT/home.js"></script>
     <script src="BOOTSTRAP/js/bootstrap.min.js"></script>

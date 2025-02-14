@@ -3,7 +3,7 @@
 }
 body{
     margin: 0%;
-    background-color: #faffeb;
+    overflow-x: hidden;
 }
 .navbar-brand img{
     height: 50px;
@@ -49,9 +49,16 @@ main h3{
 .right{
     padding:5%;
 }
-.right img{
-    width: 80%;
+.right-img{
+    width: 95%;
     height: 450px;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: all 1.5s ease-out;
+}
+.slideInForRightImg{
+    transform: translateX(0);
+    opacity: 1;
 }
 
 article{
@@ -67,15 +74,17 @@ article{
 .sec-two-left{
     padding: 80px 20px 10px 80px;
 }
-.sec-two-left img{
-    width: 100%;
-    border-radius: 10px;
-}
 .sec-two-right{
     padding: 80px 80px 10px 20px;
 }
-.sec-two-right img{
-    width: 80%;
+.sec-two-img{
+    width: 100%;
+    border-radius: 10px;
+    opacity: 0;
+    transition: all 2s ease-out;
+}
+.displayImg{
+    opacity: 1;
 }
 footer{
     background-color: #03141e;

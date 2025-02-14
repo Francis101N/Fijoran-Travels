@@ -1,9 +1,9 @@
 const mainImg = document.querySelector('.right img');
 const images = [
-  "IMAGES/people taking off on plane edited.jpg",
-  "IMAGES/fiji vacation3.jpg",
-  "IMAGES/fiji vacation1.jpg",
-  "IMAGES/fiji vacation2.jpg",
+  "IMAGES/389475cfab8acca101f17a2a4dd45410.jpeg",
+  "IMAGES/55a46dc66375049240afcef8e5c1dfac.jpeg",
+  "IMAGES/19847eafacacaad877eb1c9f071ddfac.jpeg",
+  "IMAGES/28817e1b6d52b3c1b51a441423106eaf.jpeg",
   "IMAGES/Group 15.png",
 
 ];

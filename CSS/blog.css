@@ -3,7 +3,6 @@
 }
 body{
     margin: 0%;
-    background-color: #faffeb;
 }
 .navbar-brand img{
     height: 50px;
@@ -45,9 +44,15 @@ main h3{
     grid-template-columns: 250px 250px 250px;
     padding-top: 20px;
 }
-.one img,
-.two img{
+.left-img{
     border-radius: 15px;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 1.5s ease-out;
+}
+.displayImg{
+    transform: translateX(-0);
+    opacity: 1;
 }
 .right{
     padding-left: 5%;

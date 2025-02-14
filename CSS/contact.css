@@ -3,7 +3,6 @@
 }
 body{
     margin: 0%;
-    background-color: #faffeb;
 }
 .navbar-brand img{
     height: 50px;
@@ -79,14 +78,16 @@ input{
     height: 40px;
     border-radius: 8px;
     border: none;
+    border: 1px solid black;
 }
 input:focus{
     outline: none;
  }
 #information{
-    padding: 5px 0px 150px 5px;
+    padding: 5px 0px 200px 5px;
     border-radius: 8px;
     border: none;
+    border: 1px solid black;
 }
 #information:focus{
     outline: none;

@@ -57,7 +57,7 @@
 
       <article class="text-center article">
         <h3 class="text-light fw-bolder">Let Us Show You The Beauty Of The World</h3>
-        <p class="mt-5"><a href="book-a-trip.php" class="btn btn-primary text-dark">Book a Trip</a></p>
+        <p class="mt-5"><a href="book-a-trip.php" class="btn btn-primary text-dark"><b>Book a Trip</b></a></p>
       </article>
 
       <section class="section-two d-flex flex-wrap justify-content-center text-align-center">

@@ -83,7 +83,7 @@ article{
 }
 
 .section-three{
-    padding: 1% 5% 5% 5%;
+    padding: 1% 0% 5% 5%;
 }
 .section-three div{
     padding: 10px;
@@ -93,7 +93,7 @@ article{
     height:auto;
 }
 .sec-three-cont-right img{
-    width: 70%;
+    width: 80%;
     height: auto;
 }
 footer{

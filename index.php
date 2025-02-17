@@ -42,7 +42,7 @@
          </div>
 
         <div class="right col-12 col-lg-7 col-md-6">
-          <p><img src="IMAGES/Group 15.png" alt="Group 15" ></p>
+          <p><img src="IMAGES/first.png" alt="Group 15" ></p>
         </div>
 
       </main>

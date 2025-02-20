@@ -1,0 +1,9 @@
+FIRSTNAME: God
+LASTNAME: Chris
+WHERE: lagos
+TO: london
+EMAIL: malobiajaegbu@gmail.com
+PHONE_NUMBER: 08069815240
+PRICE: $200
+DATE: 2002-02-17
+================================================

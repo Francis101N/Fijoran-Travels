@@ -41,7 +41,7 @@ ini_set('display_errors',0);
             <i class="fa-solid fa-location-pin location"></i>
             <h3>Location</h3>
             <p>100 Kajola Ultramodern <br>
-                Market Cele, Cele Busttop.Oshodi Express Way <br> Lagos</p>
+                Market Cele, Cele Bus-Stop. Oshodi Express Way <br> Lagos</p>
          </div>
       </section>
 

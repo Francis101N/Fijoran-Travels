@@ -1,10 +1,10 @@
 const mainImg = document.querySelector('.right img');
 const images = [
-  "IMAGES/389475cfab8acca101f17a2a4dd45410.jpeg",
-  "IMAGES/55a46dc66375049240afcef8e5c1dfac.jpeg",
-  "IMAGES/19847eafacacaad877eb1c9f071ddfac.jpeg",
-  "IMAGES/28817e1b6d52b3c1b51a441423106eaf.jpeg",
-  "IMAGES/Group 15.png",
+  "IMAGES/second.png",
+  "IMAGES/third.png",
+  "IMAGES/fourth.png",
+  "IMAGES/fifth.png",
+  "IMAGES/first.png",
 
 ];
 
@@ -40,3 +40,68 @@ function slideInElements() {
 // Check for scrolling and initial page load
 window.addEventListener('scroll', slideInElements);
 window.addEventListener('DOMContentLoaded', slideInElements);
+
+// Initial numbers for the elements
+const initialNumbers = {
+    explorers: 2000,
+    destinations: 100,
+    years: 20
+  };
+  
+  // Function to shuffle numbers randomly
+  function shuffleNumbers() {
+    const explorerElement = document.getElementById("explorers-num");
+    const destinationsElement = document.getElementById("destinations-num");
+    const yearsElement = document.getElementById("years-num");
+  
+    // Helper function to generate a random number
+    function randomNumber(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+  
+    // Function to simulate the shuffle animation
+    function startShuffling() {
+      let shuffleCount = 0;
+      const maxShuffles = 10; // Number of times the numbers will change before final value
+  
+      const shuffleInterval = setInterval(() => {
+        // Set random numbers
+        explorerElement.innerText = randomNumber(1500, 3000) + '+';
+        destinationsElement.innerText = randomNumber(50, 150) + '+';
+        yearsElement.innerText = randomNumber(10, 30) + '+';
+  
+        shuffleCount++;
+  
+        // After max shuffles, stop and set the numbers to their final values
+        if (shuffleCount >= maxShuffles) {
+          clearInterval(shuffleInterval);
+          // Reset to the initial values after the last shuffle
+          setTimeout(() => {
+            explorerElement.innerText = initialNumbers.explorers + '+';
+            destinationsElement.innerText = initialNumbers.destinations + '+';
+            yearsElement.innerText = initialNumbers.years + '+';
+          }, 1000); // Time before settling (in milliseconds)
+        }
+      }, 200); // Interval between each shuffle (in milliseconds)
+    }
+  
+    // Start the shuffle animation
+    startShuffling();
+  }
+  
+  // Intersection Observer to trigger shuffle when in view
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // Trigger shuffle animation when in view
+        shuffleNumbers();
+        // Stop observing after triggering once
+        observer.disconnect();
+      }
+    });
+  }, { threshold: 0.5 }); // Trigger when 50% of the element is in view
+  
+  // Select the section to observe
+  const target = document.querySelector('.sec-one-art');
+  observer.observe(target);
+  

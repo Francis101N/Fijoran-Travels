@@ -41,14 +41,14 @@ ini_set('display_errors',0);
             <i class="fa-solid fa-location-pin location"></i>
             <h3>Location</h3>
             <p>100 Kajola Ultramodern <br>
-                Market Cele, Cele Bus-Stop. Oshodi Express Way <br> Lagos</p>
+                Market Cele, Cele Busttop.Oshodi Express Way <br> Lagos</p>
          </div>
       </section>
 
       <section class="section-two d-flex flex-wrap justify-content-center text-align-center">
         <div class="left col-12 col-lg-6 col-md-6">
             <h2>Get 100% Free Course Contact With Us</h2>
-            <p>Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque.</p><br>
+            <p>Have questions or need assistance with any of our services? Don’t hesitate to reach out! Whether you're planning your next adventure, need help with bookings, or want more information about our travel offerings, we’re here to help. Contact us today, and let’s make your travel dreams come true!</p><br>
             <p class="fw-bold">Follow Us Here</p>
             <span><a href="#"><img src="IMAGES/Dribbble.png" alt=""></a></span>
             <span><a href="#"><img src="IMAGES/Behance.png" alt=""></a></span>

@@ -6,6 +6,7 @@ $contact_number = $_POST['contact_number'];
 $travel_date = $_POST['travel_date'];
 $information = $_POST['information'];
 
+$name_convert = ucwords($name);
 
 if(!$name || !$email || !$contact_number || !$travel_date || !$information){
     $msg = 'error';
@@ -38,19 +39,22 @@ if (strlen($information) > 30 ) {
 
 //write the code to send the details to email
 
-             $content = 'Name: '.$name."\n"
-                .'Email : '.$email."\n"
-                .'Contact_number : '.$contact_number."\n"
-                .'Travel_date : '.$travel_date."\n"
-                .'Information : '.$information."\n";
+             $content = 'Name: '.$name_convert."\n".
+                'Email : ' .$email."\n".
+                'Contact_number : '.$contact_number."\n".
+                'Travel_date : '.$travel_date."\n".
+                'Information : '.$information."\n".
+                '================================================' . "\n";
 
-    $to = 'Francisnwankwo37@gmail.com';
-    $sub = 'Client Trip Booking Info';
-    $from = "From: noreply@aledoy.com";
+     $to = 'Francisnwankwo37@gmail.com';
+     $sub = 'Client Trip Booking Info';
+     $from = "From: noreply@aledoy.com";  
 
     mail($to,$sub,$content,$from); 
 
-
+    $myFile = fopen("contact_us_datas.txt","a");
+    fwrite($myFile,$content);
+    fclose($myFile);
 
 
 //show succesful message

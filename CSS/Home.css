@@ -36,7 +36,7 @@ main{
     border: 1px solid grey;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     border-radius: 20px;
-    width: 650px;
+    width: 45%;
     padding-top: 10px;
     position: absolute;
     z-index: 1000;
@@ -285,6 +285,31 @@ input[type="submit"]{
     color: white;
     border-radius: 10px;
 }
+#backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    display: none; 
+    border: none;
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    z-index: 1000;
+    animation: backtotop 2s infinite;
+}
+
+@keyframes backtotop {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+#backToTop:hover {
+    background-color: #0171a6;
+}
+
 footer{
     background-color: #1b1e20;
 }
@@ -431,6 +456,9 @@ footer hr{
     }
     .right img{
         width: 95%;
+    }
+    .sec-one-art{
+        overflow-x: scroll;
     }
     .sec-cont-two{
         padding: 50px 0px 0px 0px;

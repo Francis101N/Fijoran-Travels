@@ -378,6 +378,8 @@
         </form>
     </section>
 
+    <?php include('back_to_top.php')?>
+    
     <?php include('footer.php')?>
 
     <script src="JAVASCRIPT/home.js"></script>
@@ -385,3 +387,5 @@
 </body>
 
 </html>
+
+

@@ -62,7 +62,7 @@ const initialNumbers = {
     // Function to simulate the shuffle animation
     function startShuffling() {
       let shuffleCount = 0;
-      const maxShuffles = 10; // Number of times the numbers will change before final value
+      const maxShuffles = 20;//Number of times the numbers will change before final value
   
       const shuffleInterval = setInterval(() => {
         // Set random numbers
@@ -105,3 +105,23 @@ const initialNumbers = {
   const target = document.querySelector('.sec-one-art');
   observer.observe(target);
   
+  
+  // Get the button
+const backToTopButton = document.getElementById("backToTop");
+
+// Show the button when the user scrolls down 100px
+window.onscroll = function () {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        backToTopButton.style.display = "block";
+    } else {
+        backToTopButton.style.display = "none";
+    }
+};
+
+// Scroll to top when the button is clicked
+backToTopButton.onclick = function () {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+};

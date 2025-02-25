@@ -89,6 +89,8 @@ ini_set('display_errors',0);
 
       </section>
 
+
+      <?php include('back_to_top.php')?>
       <?php include('footer.php')?>
 
 

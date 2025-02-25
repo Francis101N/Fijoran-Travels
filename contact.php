@@ -88,8 +88,11 @@ ini_set('display_errors',0);
         <img src="IMAGES/map.png" alt="map" width="100%">
       </article>
 
+
+      <?php include('back_to_top.php')?>
       <?php include('footer.php')?>
       
+    <script src="JAVASCRIPT/contact.js"></script>
     <script src="BOOTSTRAP/js/bootstrap.min.js"></script>
 </body>
 </html>

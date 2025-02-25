@@ -89,6 +89,9 @@
       </section>
 
       
+
+      <?php include('back_to_top.php')?>
+
       <?php include('footer.php')?>
 
 

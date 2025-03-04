@@ -1,10 +1,7 @@
 const mainImg = document.querySelector('.right img');
 const images = [
-  "IMAGES/second.png",
-  "IMAGES/third.png",
-  "IMAGES/fourth.png",
-  "IMAGES/fifth.png",
-  "IMAGES/first.png",
+  "IMAGES/Group-42.png",
+  "IMAGES/Group-15 (1).png",
 
 ];
 
@@ -43,9 +40,9 @@ window.addEventListener('DOMContentLoaded', slideInElements);
 
 // Initial numbers for the elements
 const initialNumbers = {
-    explorers: 2000,
-    destinations: 100,
-    years: 20
+    explorers: 1000,
+    destinations: 50,
+    years: 10
   };
   
   // Function to shuffle numbers randomly
@@ -62,7 +59,7 @@ const initialNumbers = {
     // Function to simulate the shuffle animation
     function startShuffling() {
       let shuffleCount = 0;
-      const maxShuffles = 10; // Number of times the numbers will change before final value
+      const maxShuffles = 30;//Number of times the numbers will change before final value
   
       const shuffleInterval = setInterval(() => {
         // Set random numbers
@@ -105,3 +102,23 @@ const initialNumbers = {
   const target = document.querySelector('.sec-one-art');
   observer.observe(target);
   
+
+    // Get the button
+const backToTopButton = document.getElementById("backToTop");
+
+// Show the button when the user scrolls down 100px
+window.onscroll = function () {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        backToTopButton.style.display = "block";
+    } else {
+        backToTopButton.style.display = "none";
+    }
+};
+
+// Scroll to top when the button is clicked
+backToTopButton.onclick = function () {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+};
